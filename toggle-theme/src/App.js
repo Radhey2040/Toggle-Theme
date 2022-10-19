@@ -25,7 +25,12 @@ function App() {
             </Card.Text>
           </Card.Body>
         </Card>
-        <Switch onChange={toggleTheme} checked={theme === "dark"} />
+        <div className="switch">
+          <label className="lb">
+            {theme === "light" ? "Light Mode" : "Dark Mode"}
+          </label>
+          <Switch onChange={toggleTheme} checked={theme === "dark"} />
+        </div>
       </div>
     </ThemeContext.Provider>
   );

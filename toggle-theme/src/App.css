@@ -12,8 +12,26 @@
   padding: 20px;
 }
 
+.switch {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.lb {
+  padding-right: 10px;
+}
+
+#light .switch {
+  color: #000;
+}
+
+#dark .switch {
+  color: #ffff;
+}
+
 #light .text {
-  color: black;
+  color: #000;
 }
 
 #dark .text {
